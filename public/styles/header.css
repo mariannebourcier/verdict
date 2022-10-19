@@ -1,0 +1,13 @@
+header {
+  width: 100%;
+  background-color: lightblue;
+}
+
+header a {
+  font-size: 30px;
+  color: white !important;
+}
+
+a:hover, a:visited, a:active {
+  text-decoration: none !important;
+}

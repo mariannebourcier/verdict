@@ -1,0 +1,191 @@
+body {
+  display:flex;
+  justify-content: center;
+  font-size: 20px !important;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+main {
+  min-width: 600px
+
+
+}
+
+.alert-user {
+  outline: 2px solid #B01515;
+  font-family: 'Bungee', cursive;
+  font-size: 20px;
+  background-color: #FEBDBD;
+  color: #B01515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+
+#email-text, #title-text {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  outline: none;
+  border-left-style: hidden;
+}
+#email-text{
+
+  margin-bottom: 2em;
+}
+
+
+
+#options-title{
+
+  margin-top: 2em;
+}
+
+#options-container {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.option-wrapper {
+  margin-bottom: 1em;
+}
+
+.option-wrapper input {
+  padding: 6px 10px;
+
+}
+
+.option-title-input {
+flex: 1;
+border-radius: 6px;
+}
+
+.option-description-input {
+flex: 1;
+border-radius: 6px;
+
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-size: 24px;
+  font-family: 'Bungee', cursive !important;
+}
+
+
+p{
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-size: larger;
+}
+
+#user-poll {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#options_table{
+  display: flex;
+  flex-direction: row;
+}
+
+#add_button{
+
+float: right;
+}
+
+
+.delete-btn {
+  font-family: 'Bungee';
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.delete-btn:focus{
+  outline:none;
+}
+.delete-btn:hover{
+  opacity: 0.8;
+}
+
+.addButton {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Bungee', cursive !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.addButton:focus{
+  outline: none;
+}
+
+#create_button{
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+
+
+/* CSS */
+.button_style {
+  font-family: 'Bungee',cursive;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button_style:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button_style {
+    padding: 0.25em 0.75em;
+  }
+}

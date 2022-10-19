@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Create Poll</title>
+  <link rel="stylesheet"
+    type="text/css" href='/styles/poll_page.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,600&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</head>
+
+<body>
+  <%- include('partials/_header') %>
+
+  <main>
+
+    <h1>Create a poll</h1>
+      <p>To create a poll, please fill the form below!</p>
+
+
+    <!-- input here -->
+    <div id="poll-form">
+
+        <div id="user-poll">
+          <div class="alert-user" style="display:none">Error!</div>
+            <label for="email-text" id="emailInput">*Enter your email:</label>
+            <input type="email" name="email" id="email-text"placeholder='example@email.com'></input>
+            <label for="poll-title" >*Poll title:</label>
+            <input type="text" name="title" id="title-text" placeholder="eg: what you want to eat for dinner tonight?"></input>
+        </div>
+    </div>
+
+        <!-- option  -->
+
+        <div id="options-title" for="poll-question-1">Options: (minimum two)</div>
+
+<!-- ol has li inside , ol = orderlist, will has number auto -->
+  <ol id="options-container">
+  </ol>
+  <div>
+      <button id="add_button" class="addButton">Add option</button>
+      <div id="create_button">
+        <button id="create-btn" class="button_style" role="button">Create</button>
+      </div>
+
+
+
+  </main>
+</body>
+
+</html>
+
